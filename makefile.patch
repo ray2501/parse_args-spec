@@ -1,0 +1,11 @@
+--- Makefile.in.orig	2018-01-11 20:40:12.323282046 +0800
++++ Makefile.in	2018-01-11 20:40:31.855266067 +0800
+@@ -206,7 +206,7 @@
+ 	@echo "        xml2nroff sample.xml > sample.n"
+ 	@echo "        xml2html sample.xml > sample.html"
+ 
+-install: all install-binaries install-libraries install-doc
++install: all install-binaries install-libraries
+ 
+ install-binaries: binaries install-lib-binaries install-bin-binaries
+ 
