@@ -1,7 +1,7 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set base "parse_args-0.3"
+set base "parse_args-0.3_git20180511"
 
 if {[file exists $base]} {
     file delete -force $base
@@ -9,6 +9,18 @@ if {[file exists $base]} {
 
 set var [list git clone https://github.com/RubyLane/parse_args.git $base]
 exec >@stdout 2>@stderr {*}$var
+
+cd $base
+
+set var2 [list git checkout 90945a09ad27c728ec7c424d3667b9dc5150b4a6]
+exec >@stdout 2>@stderr {*}$var2
+
+set var2 [list git reset --hard]
+exec >@stdout 2>@stderr {*}$var2
+
+file delete -force .git
+
+cd ..
 
 if {[file exists $base]} {
     file delete -force $base/.git
