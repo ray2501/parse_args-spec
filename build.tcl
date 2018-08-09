@@ -1,7 +1,7 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set base "parse_args-0.3_git20180511"
+set base "parse_args-0.3.1_git20180809"
 
 if {[file exists $base]} {
     file delete -force $base
@@ -12,7 +12,7 @@ exec >@stdout 2>@stderr {*}$var
 
 cd $base
 
-set var2 [list git checkout 90945a09ad27c728ec7c424d3667b9dc5150b4a6]
+set var2 [list git checkout 3371d217b099b27fcaebdaf1c11119c2b9d93a4c]
 exec >@stdout 2>@stderr {*}$var2
 
 set var2 [list git reset --hard]
