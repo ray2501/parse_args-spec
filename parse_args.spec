@@ -6,7 +6,7 @@ Name:          parse_args
 Summary:       A fast argument parser for Tcl
 Version:       0.3.1_git20180809
 Release:       0
-License:       Tcl
+License:       TCL
 Group:         Development/Libraries/Tcl
 Source:        %{name}-%{version}.tar.gz
 Patch0:        makefile.patch
