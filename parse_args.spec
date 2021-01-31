@@ -4,7 +4,7 @@
 
 Name:          parse_args
 Summary:       A fast argument parser for Tcl
-Version:       0.3.1_git20180809
+Version:       0.3.1_git20210131
 Release:       0
 License:       TCL
 Group:         Development/Libraries/Tcl
@@ -13,8 +13,8 @@ Patch0:        makefile.patch
 URL:           https://github.com/RubyLane/parse_args
 BuildRequires: autoconf
 BuildRequires: make
-BuildRequires: tcl-devel >= 8.5
-Requires:      tcl >= 8.5
+BuildRequires: tcl-devel >= 8.6
+Requires:      tcl >= 8.6
 BuildRoot:     %{buildroot}
 
 %description
